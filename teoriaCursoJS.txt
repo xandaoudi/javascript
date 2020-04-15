@@ -1,0 +1,842 @@
+*** Módulo A: Conhecendo o JavaScript ***
+
+
+* Aula 01: O que faz o JavaScript? *
+
+Conceito de cliente e servidor: o lado do usuário é o cliente. 
+	O servidor é quem fornece as informações, dados, exemplo: Google, AWS e etc.
+
+O javaScript é uma tecnologia que surgiu basicamente para o lado do cliente, mas atualmente é utilizado tbm no lado do servidor.
+O curso terá o foco no Client Side.
+Obs: HTML e CSS não são linguagem de programação, eles são tecnologias de construção de sites.
+Empresas que utilizam JS: Google, Youtube, Netflix, Facebook e etc...
+
+
+* Aula 02: como chegamos até aqui? A evolução do JavaScript *
+
+(Revisão)
+Questão 01: Sabe a diferença entre um cliente e um servidor para a internet?
+Questão 02: Para que serve HTML, CSS e JavaScript?
+Questão 03: Citar 4 sites que utilizam o JS?
+
+
+* Aula 03: Dando os primeiros passos *
+
+(Revisão)
+Questão 01: Qual empresa criou o JavaScript?
+Questão 02: Java e JavaScript possuem alguma relação?
+Questão 03: O que EcmaScript tem a ver com JavaScript?
+Questão 04: Sabia que o programa Whatsapp desktop é criado em Js?
+
+Dicas de aprendizados para Programação:
+
+Somente assistindo vídeos você não vai conseguir aprender a programar.
+Aprender a programar exige PRÁTICA, PRÁTICA e PRÁTICA
+No começo é mais díficil, mas vai ficando mais fácil com o decorrer do tempo.
+Ser persistente no aprendizado da programação
+
+Como aprender utilizando o curso?
+a) assistir os vídeos,
+b) colocar a mão na massa, instalar as ferramentas e fazer o programa funcionar
+c) lê os conteúdos relacionadas ao assunto
+d) Fazer anotações
+e) Interações com outros programadores, de forma geral
+f) Começar a pensar em projetos próprios e como a programação pode ser utilizada nesses projetos.
+g) Fazer exercícios.
+
+Bibliografia:
+
+Livro JavaScript - O Guia Definitivo Editora O Relly
+Livro JavaScript - Guia do Programador Autor: Maurício Samy Silva
+
+Guia de referência da Mozilla entrar no site developer.mozilla.org
+Guia de referência da Ecma site ecma-international.org nos standard Ecma-262
+
+Dúvidas Comuns:
+
+a) Qual a idade para aprender a programar? Não existe idade mínima ou máxima para aprender programar.
+b) Somente homem deve aprender programar? Mito, isso não existe.
+c) Precisa morar em um grande centro ou em um polo tecnologico? Em qualquer lugar você pode aprender programar.
+d) Precisa ser nerd para aprender programar? A pessoa precisa somente ter vontade de programar
+e) Para aprender programar precisa saber muita matemática ou saber inglês? Não necessariamente. Existe bons materiais em português.
+Precisa ter força de vontade para aprender.
+f) Aprender lógica de programação é perda de tempo? Aprender a base nunca é perda de tempo.
+g) Todo programador ganha muito dinheiro? Os iniciantes não ganham muito dinheiro.
+h) Qual a linguagem é a melhor? Não existe a melhor linguagem. Cada uma tem a especificidade. Devemos aprender várias linguagens
+i) Devemos aprender o Js puro? Sim, ele é a base de vários framework e tecnologias.
+j) Vou estudar somente em cima da hora? Programação deve ter aprendizado constante, diariamente. Colocar a mão na massa diariamente.
+
+Requisitos para o curso.
+.navegador, de preferência o Chrome
+.editor de código. No curso VScode.
+.instalar o node.js
+
+
+* Aula 04: Criando o seu primeiro script *
+
+(Revisão)
+a) Qual a bibliografia recomendada?
+b)Para aprender Js, precisamos saber inglês?
+c) Qual dica nós demos para quem quer estudar?
+d) Quais programas foram instalados?
+
+Arquivos para internet são em letra minusculas e sempre deve colocar a extensão. Por exemplo .html, .js, .css e etc
+Em arquivos html na tag <head> são colocados as configurações
+
+Comandos em Js sempre em letras minusculas.
+
+
+
+
+*** Módulo B: Comandos Básicos do JavaScript ***
+
+* Aula 05: Variáveis e Tipos Primitivos *
+
+(Revisão)
+a) Ja sabe como orgainizar as suas pastas no VsCode?
+b) O Node.js esta instalado no seu computador? Qual a função do Node.js?
+c) Sabe diferenciar o HTML5, CSS3 e Js dentro de um código?
+d) Sabe disparar alertas, confirmações e perguntas?
+
+Comandos da aula 04: 
+window.alert() faz um alerta na página, o famoso pop-up que aparece nos sites.
+window.confirm() faz uma confirmação através de um alerta, o pop-up aparece e pede para confirmar ou negar a pergunta.
+window.prompt() faz uma pergunta que pode ser escrita e na caixa de alerta.
+
+Comentários no Js: são duas formas
+//: para comentar uma única linha
+/*        */ : serve para comentar mais de uma linha de código (comentar um bloco de código)
+
+*Variáveis*  
+No Js o sinal único de "=" é denominado recebe
+No Js null é nulo.
+
+Variáveis são alocações de memórias do computador.
+
+Obs: No JavaScript moderno, além de utilizar a palavra var, podemos usar a palavra let. Também existe o const para denominar uma constante.
+Obs1: O denominador var serve para variável de escopo global e ocupa um maior espaço da memória. O denominador let é para uma variável do tipo
+de escopo ou local e possui um espaço de memória menor.
+
+Formação de uma variável:
+let ou var numero = 1 (tipo de variavel, identificador e atribuição)
+
+Obs: string no JS é utilizado com "", '', ´´ 
+
+Nome de variaveis(Indentificadores):
+	Regras:
+		.Podem começar com letra, $ ou _
+		.Não podem começar com números
+		.É possível usar letras ou números
+		.É possível usar acentos e símbolos
+		.Não podem conter espaços
+		.Não podem ser palavras reservadas da linguagem
+
+	Dicas para escolher nome de identificadores:
+		.Letra Maiúsculas e minúsculas fazem diferença
+		. Tente escolher nomes coerentes para as variáveis
+		. Evite se tornar um 'programador alfabeto' ou um 'programador contador' (o nome das variáveis deve fazer sentido para o que ela representa)
+
+Variáveis servem para guardar dados. (São espaços de memórias para guardar dados)
+
+Tipos primitivos de variáveis no Js:
+	.Number: 5 18 -12 0.5 -15.9 3.14
+	.String: "Google", 'JavaScript', `Curso em video`
+	.Boolean: true, false
+
+Data Types:
+	.Number
+		Infinity
+		NaN
+	.String
+	.Boolean
+	.null
+	.undefined
+	.Object
+		Array
+	.Function
+
+Comando typeof: serve mostrar qual tipo da variável. Exemplo:
+	> var n = 200
+	> typeof n
+	> number
+
+* Aula 06: Tratamento de dados *
+(Revisão)
+a) O que é uma variável?
+b) Como declarar uma variável númerica Inteira ou Real usando Js?
+c) Quais são os tipos primitivos do JS?
+d) O que significa colocar o valor null dentro de uma variável?
+
+
+Manipulação de Dados:
+
+O Sinal de + serve para:
+	.concatenação (number + string ou string + string)
+	.adição (number + number)
+
+Exercício 003: 
+	var n1 = window.prompt('Digite um número: ') //o prompt de comando recebe uma string, por isso deve converter para o tipo number
+    var n2 = window.prompt('Digite outro número: ') //recebe uma string no prompt
+    var s = n1 + n2
+    window.alert('A soma dos valores é: ' + s) ou forma de escrever esse alert seria: ` A soma dos valores ${n1} + ${n2} é ${n}`
+
+		Comandos: 
+			Conversão de String para Número:
+				. Number.parseInt(n) : converte para número inteiros
+				. Number.parseFloat(n): converte para número real
+				. Number(n): nas versões mais recentes do Ecma é utilizado esse comando e o próprio Js define se é Inteiro ou Real
+
+			Conversão de Número para String:
+				. String(n)
+				. n.toString()
+
+Formatando Strings:
+
+	.Templates Strings: serve para utilizar variáveis dentro da string.
+	Sintaxe: ´string a ser digitada ${variável}´ Exemplo:
+		var nome = Alexandre
+		var idade = 31
+		`o meu nome é ${nome} e tenho a idade de ${idade} anos`
+
+	Comandos:
+		> var s = 'JavaScript'
+		> s.length //quantos caracteres a string possui
+		> s.toUperCase() //tudo para Maiúsculas
+		> s.toLowerCase() //tudo para minúsculas
+	
+
+Formantando Números:
+
+>var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2) //definiu 2 casas decimais
+'1545.50'
+> n1.toFixed(2).replace('.', ',') // definiu duas casas decimais e mudou o ponto por vígula
+'1545,50'
+
+
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //converte para string formato brasil, coloca o estilo moeda e define qual a moeda deseja
+'R$ 1,545.50'
+
+* Aula 07: Operadores(Parte1) *
+
+(Revisão)
+a) Como é possível é possível guardar o valor digitado em um prompt() dentro de uma variável?
+b) Como fazer com que um número digitado em um prompt() possa ser usado em cálculos?
+c) Como transformar um texto todo para letras MAIÚSCULAS?
+d) Como mostrar um número formatado como um valor monetário?
+
+Operadores:
+
+O JS tem vários tipos de operadores, esse curso será focado nesses:
+	.aritméticos
+	.atribuição
+	.relacionais
+	.lógicos
+	.ternário
+
+Operadores aritméticos:
+
+	+ adição
+	- subtração
+	* multiplicação
+	/ divisão
+	% divisão inteira
+	** potenciacão
+
+	Exemplos: 
+	5 + 2 -> 7
+	5 - 2 -> 3
+	5 * 2 -> 10
+	5 / 2 -> 2.5
+	5 % 2 -> 1
+	5 ** 2 -> 25 = 5^2
+
+	Cuidado com uso de operadores: eles possuem precedência de operadores.
+	5 + 3 / 2 = 1.5
+	(5 + 3)/ 2 = 4
+
+	Ordem de precedência dos operadores de maior para o menor:
+		|()
+		|**
+		|* / %
+		|+ -
+		V
+
+		Exemplos:
+		. var a = 5 + 3          8
+		. var b = a % 5          3
+		. var c = 5 * b ** 2     45
+		. var d = 10 - a / 2     6
+		. var e = 6 * 2 / d      2
+		. var f = b % e + 4 / e  3
+	
+	Auto-atribuições:
+	var n = 3 
+	n = n + 4            7
+	n = n - 5            2
+	n = n * 4            8
+	n = n / 2            4
+	n = n ** 2           16
+	n = n % 5            1
+
+	Simplicando:
+	 var n = 3
+	 n += 4
+	 n -= 5
+	 n *= 4
+	 n /= 2
+	 n ** = 2
+	 n %= 5
+
+Operadores de incremento: 
+var x = 5                   5    
+x = x + 1         x+=1      6     (também pode ser escrito da seguinte forma x++)
+x = x - 1         x-1       5     (também pode ser escrito da seguinte forma x--)
+
+
+* Aula 08: Operadores(Parte2) *
+(Revisão)
+a) Para que server o operador % em JS? Seria para calcular porcentagem?
+b) 6 + 4 / 2 igual a 5 ou 8?
+c) Se uma variável n está valendo 10 e executarmos um n += 5, qual será seu novo valor?
+d) Para que servem os operadores ++ e --?
+
+Operadores relacionais:
+> maior
+< menor
+>= maior ou igual
+<= menor ou igual
+== igual
+!=  diferente
+Obs: Os valores dos operadores relacionais são boolean.
+
+Exemplos:
+5 > 2 true
+7 < 4 false
+8 >= 8 true
+9 <= 7 false
+5 == 5 true
+4 != 4 false
+
+Operadores relacionais de identidade:
+ 5 == 5 true
+ 5 == '5' true
+ 5 === '5' false
+
+ O sinal == para o JavaScript não testa o tipo da variável, ele testa somente o valor da variável
+ O sinal === em javaScript serve para testar a grandeza e o tipo da variável.
+ O operador === é  chamado de operador de igual estrita
+
+Operadores Lógicos:
+
+! Operador lógico not ou negação : é um operador unário 
+&& Operador lógico e (conjunção)
+|| Operador lógico ou (dijunção)
+
+Lembrar da tabela verdade.
+
+Operador de conjunção:
+p && q    valor
+V && V      V
+V && F      F
+F && V      F
+F && F      F
+
+Operador de disjunção:
+p || q    valor
+V || V      V
+V || F      V
+F || V      V
+F || F      F
+ 
+Ordem de precedência entre operadores na ordem decrescente
+| aritméticos
+| relacionais
+| lógicos
+V
+
+Ordem de execução entre os operadores lógicos na ordem decrescente
+| !
+| &&
+| ||
+V
+
+Precedência do maior para o menor:
+| aritméticos observando a sua precedência: (), **, * / %, + - 
+| relacionais não possui ordem de precedência entre os relacionais
+| lógicos observando a sua ordem de precedência: !, &&, ||
+V
+
+Operador Ternário: são as operacões que possui ? e : na mesma expressão
+
+teste ? true : false 
+
+O operador se chama ternário porque possui três partes: o primeiro bloco é a parte a ser testada, após será o que vai acontecer se o teste for verdadeiro, 
+após : é o que vai acontecer se o teste for falso.
+
+Exemplo: 
+
+média >= 7 ? 'aprovado' : 'reprovado'
+
+
+*** Módulo C: Entendendo o DOM ***
+
+* Aula 09: Introdução ao DOM *
+(Revisão)
+
+a) Qual a diferença entre usar =, == e === em códigos escritos em JS?
+b) Em uma expressão,  temos os  operadores || e &&. Quem eu resolvo primeiro?
+c) Sabe utlizar o operador ternário para colocar um entre dois valores em uma variável? // Rever a parte do operador ternário.
+
+O que é DOM? 
+DOM é um acrônimo de Document Object Model, ou seja, modelo de objeto para documentos, basicamente é um conjunto de objetos dentro do seu navegador que vai dar acessos
+ao seus componentes internos do seu website. 
+o DOM não funciona dentro do Node.Js, ele está presente quando roda o JS no navegador.
+
+Árvore DOM
+A árvore DOM começa da raiz, e essa raiz dentro do navegador é chamada de window. Tudo dentro do JS está dentro de um objeto chamado window.
+
+Dentro do window temos outros vários objetos,
+	window:
+		.location (diz qual é a localização do site, URL, página atual, página anterior)
+		.document (é o documento atual)
+		.history (vai guardando de qual site vc veio, é o histórico)
+		possui vários outros.
+	
+	Dentro do document eu tenho o HTML
+		document
+			|
+			V
+			HTML
+	
+	Dentro do HTML possuimos dois filhos:
+		         HTML
+		     /                  \
+		    V                    V
+		  head                  body
+	/       |                /   |  |  \
+   V        V               V    V  V   V
+   meta     title           h1   p  p   div
+                                    |
+									V
+								  strong
+
+Comandos: 
+document.write.(window.document.charset): escreve qual é o set de caracteres da página
+document.write.(window.navigator.appname): mostra qual o navegodor utilizado
+document.write.(window.document.URL): mostra qual URL acessada
+
+Obs: Elementos é tudo o que aparece na árvore DOM.
+
+
+Selecionando elementos dentro do document:
+	.por marca: getElementsByTagName()
+	seleciona mais de um objeto
+	Obs: 	.o comando var.innerText: pega somente o texto que está dentro da variável.
+			. o comando var.innerHTML: pega a formatação da variável
+	
+	.por id: getElementById()
+		busca somente um elemento da árvore DOM
+	
+	.por nome: getElementsByName()
+		pode ser utilizado se existir a propriedade name.
+	
+	.por classe: getElementsByClassName()
+		pode ser utilizado para pegar um conjunto elementos de uma classe
+
+
+	.por Seletor:
+		comandos: 	querySelector()
+					querySelectorAll()
+		
+		Exemplos: var d = document.querySelector('div#msg') //selecionando por id
+				  var d = document.querySelector('div.msg') //selecionando por classe
+		seletor id: #
+		seletor class: .
+
+* Aula 10: Eventos DOM *
+(Revisão)
+a) O que significa a sigla DOM?
+b) Sabe montar a árvore DOM de um website simples?
+c) O que são os elementos PARENT e os elementos CHILD em uma árvore DOM?
+d) Quais são os principais métodos de selecionar elementos DOM dentro do JS?
+
+
+Eventos DOM:
+
+O que é DOM? Document Object Model, é um facilitador que existe dentro do navegador para dar acessos dos elementos pelo JS.
+
+Montar um exemplo de Árvore DOM.
+
+Técnicas para acessa elementos da árvore DOM: TagName, Id, Name, ClassName, querySelector.
+
+Eventos DOM:
+
+	Eventos é tudo aquilo que possa acontecer com qualquer elemento da árvore DOM.
+	 Exemplos de Eventos:
+	 	eventos de mouse: 	mouseenter(mouse entrou no elemento selecionado)
+		 					mouseout(mouse saiu do elemento selecionado)
+							mousemove(mouse movendo dentro do elemento selecionado)
+							mousedown(clica e segura o mouse dentro do elemento selecionado)
+							mouseup(solta o botão do mouse dentro do elemento selecionado)
+							click(clique dentro do elemento selecionado)
+	
+	.Para pesquisar os eventos que podem acontecer dentro do JS: pesquisar no Google javaScript dom events list e clicar no site Event Reference da MDN.
+	Existem vários eventos no JS e nem todos os elementos são compatíveis com todos os eventos.
+
+Funções: uma função em JavaScript é um conjunto de código, que vão ser executada somente quando o evento ocorrer.
+	Sintaxe de uma função: 
+		function nomeFunção(param) {
+			// bloco de código
+		}
+	Geralmente os nomes de uma função são nome de ações que vão acontecer.
+
+Os enventos podem ser configurados na parte HTML ou na parte do JS
+
+Exemplo de como Disparar eventos através do HTML:
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'            
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+
+</body>
+
+
+Dá para disparar eventos no JS utilizando os listener. Verficar o ex006.html
+
+
+*** Módulo D: Condições em JavaScript ***
+
+* Aula 11: Condições(Parte 01) *
+(Revisão)
+a) Consegue citar 03 eventos que podem acontecer com elementod DOM de um site?
+b) O que é uma função? Como criar funções em JS?
+c) Sabe como pegar os valores de caixas de texto e fazer cálculos com eles?
+
+Condições em JS:
+
+	Sequências: 
+		var n = 3
+		   |
+		   V
+		n += 2
+		   |
+		   V
+		window.alert(n)
+	
+	Condições: 
+		if(condição) {
+			//caso a condição seja verdadeira
+		} else {
+			// caso a condição seja falsa
+		}
+
+	Tipos de condição:
+		a) condição simples: if(condição) {
+			true
+		}
+		Na condição simples se a condição for falsa nada em especial irá acontecer. O fluxo do programa continua fucionando sem problemas.
+
+		b) condição composta
+		if(condição) {
+			true
+		} else {
+			false
+		}
+		
+		Nessa condição caso a condição seja verdadeira executa uma parte do código, caso a condição seja falsa executa outra parte do código.
+
+* Aula 12: Condições(Parte2) *
+
+(Revisão)
+a) Já sabe utilizar a extensão Node Exec no VsCode?
+b) Sabe criar uma condição em seu programa JS?
+c) Consegue diferença condições simples e condições compostas?
+
+Tipos de condições:
+	Simples: if(condição){
+		true
+	}
+
+	Composta: if(condição) {
+		true
+	} else {
+		false
+	}
+
+Existem situações que existem várias outras condições.
+
+Condições aninhadas: é uma condição composta que possuem outras condições dentro dela.
+Por exemplo:
+	condição aninhada:
+		if(condição1) {
+			//bloco de código 1
+		} else if(condição2){
+			//bloco de código 2
+		}else {
+			bloco de código 3
+		}
+		Podemos colocar vários níveis de aninhamento.
+
+		Para o bloco de código 2 ser executada o bloco 1 precisa ser falso. Para o bloco 3 ser executado o bloco 1 e 2 precisam ser falsos.
+
+Condição multipla: ela serve para valores fixos. Não serve para intervalo de valores. Possue a possibilidade de outros valores fixos e não somente do sim e não.
+	switch(expressão){
+		case valor1:
+			//bloco de código
+			break
+		case valor2:
+			//bloco de código
+			break
+		case valor3:
+			//bloco de código
+			break
+		default:
+			//bloco de código
+			break
+	}
+
+	Obs: sempre lembrar de colocar o break no final de cada case e do default. 
+		O default funciona como um else do if
+
+* Aula 12.ex01 - Exercício Parte 01 *
+
+Foi criado um modelo de site.
+Possui uma body que vai possui a cor azul.
+Dentro da body tem a header, um footer e uma section com duas divs.
+Obs: verificar a aula 12ex que possui o modelo desenvolvido.
+
+
+
+*** Módulo E: Repetições em JavaScript ***
+
+* Aula 13: Repetições(Parte1) *
+
+(Revisão)
+a) Sabe mudar a cor do fundo de um site dinamicamente, usando JS?
+b) Consegue inserir uma imagem dentro do seu site sem ter a tag <img> previamente criada?
+c) Já treinou bastante o uso de condições simples, compostas, aninhadas e múltiplas?
+
+Repetições em JS:
+Também são chamadas de laços ou iterações.
+
+Explicação:
+	function comerPizza() {
+		comerFatia()
+		comerFatia()
+		comerFatia()
+		comerFatia()
+		comerFatia()
+		comerFatia()
+		comerFatia()
+		comerFatia()
+	}
+
+	Na programação é partir de um ponto A(ponto inicial) para o ponto B(objetivo). Para conseguir atingir o objetivo existem várias formas que são chamadas estruturas de controle.
+	A primeira estrutura de controle e a mais simples é a sequência:
+	Sequência: ela parte do ponto A até o ponto B executando tarefas sequencialmente.
+	Condições: quando existe algumas possibilidades das tarefeas serem realizadas.
+	Repetições ou laços: começa exatamente como uma condição, ele testa uma expressão, e assim ele tem duas condições verdadeiro ou falso, mas o seu comportamento é diferente.
+		Se a expressão for verdadeira ele executa o código, e no final ele volta para a expressão para testar se ela é verdadeira novamente até que a expressão se torne falsa, 
+		e após a expressão virar falsa ele sai do laço e segue o fluxo do código.
+
+		Sintaxe de uma Repetição (while): 
+			while(condição) {
+				//bloco de código
+			}
+
+			Exemplo: 
+			function comerPizza() {
+				while(temFatia()) { 
+					comerFatia()
+				}
+			}
+
+	O while é o laço mais simples que existe. 
+	O while é uma estrutura de repetição com o teste lógico no início.
+
+	Laço que primeiro executa o código, depois realiza o teste lógico:
+	 	Sintaxe do:
+
+		 do {
+
+		 } while(condição)
+
+* Aula 14: Repetições(Parte2) *
+(Revisão)
+a) O que faço se quiser fazer uma determinada atividade acontecer várias vezes?
+b) Sabe diferenciar as estruturas de  condição e as estruturas de repetição?
+c) Consegue dizer a diferença entre as estruturas while e a do..while?
+
+Repetições em JS Parte2:
+Estruturas de controle: sequências, condições e repeticões
+
+* Estrutura de repetição com variável de controle:
+ 	Na estrutura de repetição com variável de controle a expressão tem possui a inicialização, o teste lógico e o incremento
+	Sintaxe do for:
+		for(início; teste; incremento) {
+			//bloco de código
+		}
+	Exemplo:
+		.while:
+			let c = 1
+			while (c <=10) {
+				console.log(`Passo ${c}`)
+				c++
+			}
+		.for 
+			for (let c = 1; c <= 10; c++) {
+				console.log(`Passo ${c}`)
+			}
+		O for é utilizado para quando se sabe o limite das execuções.
+
+* Exercícios JavaScript(Parte4) *
+(Revisão)
+a) Já aprendeu a usar direito a extensão Watch in Chrome no VsCode?
+b) Já aprendeu a usar o Modo de Depuração do VScode?
+c) Ja fez todos os testess com as estruturas while, do..while e  for?
+d) Quer aprender um pouco mais como manipular dados em controloes HTML com JS?
+
+
+
+** Módulo F: Avançando no JavaScript **
+
+* Aula 15: Variáveis compostas * 
+
+(Revisão)
+a) Já treinou bastante o uso das estruturas de repetição while, do..while, for?
+b) Aprendeu a manipular objetos de formulários HTML usando JS?
+c) Seria bom tornar seus códigos menores e mais simplificados?
+d) Você é daquele tipo de pessoa que ouviu alguém dizer que "usar array é difícil"?
+
+* Variáveis compostas
+
+Variáveis simples só conseguem armazenar um valor por vez.
+Variáveis compostas devem ser capazes de armazenar vários valores em uma mesma estrutura.
+
+Sintaxe da variáveis compostas(Array): 
+let/var identificador = [i0, i1, i2]
+	Obs: o primeiro valor dentro do array ocupa a posição 0.
+	Obs1: A variáveis compostas podem ser chamadas de Array ou em português vetor.
+
+O array é composto de elementos. O elemento de um vetor é um par que agrupa os espaço da memória, o valor(conteúdo) dentro dele, e o índice(índice é chave da posição do elemento).
+Um array ou um vetor ou uma variável composta, é uma variável que possui vários elementos e cada elemento é composto por seu valor e por uma chave de identificação.
+
+	Exemplo: let num = [5, 8, 4]
+
+Acrescentando um valor no array:
+
+let num = [5, 8, 4] possui os índeces 0, 1, 2
+No JS podemos adicionar um valor no array num da seguinte maneira: num[3] = 6, logo o array ficará assim:
+	let num = [5, 8, 4, 6]
+
+Para adicionar um valor sempre na última posição vazia do array, deve-se utilizar o comando array.push(valor):
+	Exemplo: let num = [5, 8, 4, 6]
+			 num.push(7)
+			 num = [5, 8, 4, 6, 7]
+
+Para saber o comprimento de um array, deve-se utilizar o comando array.length:
+	Exemplo let num = [5, 8, 4, 6, 7]
+	        num.length // length não é um método, ele é um atributo
+			5
+
+Para colocar os elementos dentro do array de forma crescente deve-se utilzar o comando array.sort():
+	Exemplo: let num = [5, 8, 4, 6, 7]
+	         num.sort()
+			 num = [4, 5, 6, 7, 8]
+
+Para mostra o array sem a formatação de []:
+	let num = [4, 5, 6, 7, 8]
+	for (let pos = 0; pos<num.length; pos++) {
+		console.log(num[pos])
+	}
+
+	Outra maneira de percorrer um vetor: 
+	for(let pos in num ) {
+		console.log(num[pos])
+	}	
+
+	Obs0: uma maneira de ler: para cada posição em num eu vou mostra o num[pos]
+	Obs1: O for in somente funciona para objetos e array.
+
+Buscar valores dentro de um vetor:
+
+let num = [4, 5, 6, 7, 8]
+num.indexOf(7) //o JS vai buscar no vetor o valor 7, caso exista o valor 7 ele vai mostrar a sua posição
+
+* Aula 16: Funções *
+
+(Revisão)
+a) Conseguiu simplificar seus códigos com o uso de Array?
+b) Sabe colocar um array em ordem usando apenas uma chamada de função?
+c) Lembra como disparar uma função simples quando apertamos um botão?
+d) Quer aprender mais sobre funções?
+
+Funções em JavaScript:
+	JavaScript é uma linguagem que funciona sobre o paradigma funcional. Função em JavaScript é muito importante.
+
+	Funções:
+	Lembrar do exemplo dado em aula de ir comprar o leite. Ex: A mãe chama o filho(chamada)	entrega um dinheiro e diz para ele ir comprar o leite(parâmetros),
+	o filho vai na mercearia, compra o leite e volta para casa(ação) e entrega o leite para a mãe(retorno)
+	Todas funções podem ter os seguintes fatores: chamada da função, um conjunto de parâmetros da função, ação e o retorno. 
+	Obs: Nem todas funções podem usam parâmetros e nem toda função tem retornos.
+
+	Funções são ações executadas assim que são chamadas ou em decorrência de algum evento.
+	Uma função pode receber parâmetros e  retornar um resultado.
+
+	Sintaxe de um função:
+		function NomeDaAção(parâmetros) {
+			// bloco de código da ação que deve ser executada
+			return // após o return deve ser colocado o que a função deve retornar
+		}
+
+		ação(parâmetros) // isso é a chamada da função
+
+		Obs: 
+			1) Os parâmetros de uma função deve ser colocar em ordem de prioridade, os primeiros colocados são os de maiores prioridades.
+			2) Uma função que possui mais de um parâmetro, pode funcionar somente com um ou mais parâmetro. Ex:
+				function açao(a1, a2, a3){
+					// bloco de código
+				}
+				A função ação pode funcionar da seguinte maneira: 
+					.ação(a1) //vai funcionar corretamente
+					.ação(a1, a2) //vai funcionar corretamente
+					.ação(a1, a2, a3) // vai funcionar corretamente
+					.ação(a1, a3) // NÃO VAI FUNCIONAR
+		
+		Exemplo:
+
+		function parImp(n) {
+			if(n%2 == 0){
+				return 'par'
+			} else {
+				return 'ímpar'
+			}
+		}
+		
+		let res = parImp(11)
+			console.log(res)
+			> ímpar
+	
+	Obs: Uma função em JS só pode ter um retorno

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALFANDEGA</title>
+    <style>
+        body {
+            background: rgb(192, 192, 204);
+            color: darkblue;
+            font: normal 18pt Arial;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Bem vindo ao Brasil!</h1>
+    Por favor diga de qual pais você veio <input type="text" id="txtnacionalidade" name="txtnacionalidade">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            let pais = document.querySelector('input#txtnacionalidade')
+            let res = document.querySelector('div#res')
+            res.innerHTML = `<p>Você vive no país <strong>${pais}</strong></p>`
+            if(pais == 'Brasil') {
+                res.innerHTML += '<p>Bem vindo! não precisa mostrar o passaporte</p>'
+            } else {
+                res.innerHTML += '<p> Bem vindo ao Brasil! Por favor me mostre seu passaporte</p>'
+            }
+        }
+    </script>
+
+</body>
+</html>
